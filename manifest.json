@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Que onda",
-  "description": "This extension changes the input text value from Twitter.com",
+  "description": "This extension changes the input text value from Twitter.com and hides the 'moments' tab",
   "version": "0.1",
   "options_page": "options.html",
 
