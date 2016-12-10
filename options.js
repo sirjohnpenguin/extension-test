@@ -46,12 +46,6 @@ document.getElementById("set").onclick = function() {
 		moments_status = "off";
 	}
 	
-	if (selectedValue2.checked == true){
-		moments_status = "off";
-	}else{
-		moments_status = "on";
-	}
-
 	chrome.storage.local.set({ "data" : d }, function() {
 		if (chrome.runtime.error) {
 			console.log("Runtime error.");
