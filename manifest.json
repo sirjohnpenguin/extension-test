@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Que onda",
+  "description": "This extension changes the input text value from Twitter.com",
+  "version": "0.1",
+  "options_page": "options.html",
+
+  "icons": { "16": "js-16.png",
+           "48": "js-48.png",
+          "128": "js-128.png" },  
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery.js", "tw_main.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+
+	"permissions": [
+	  "storage"
+	]
+
+}
